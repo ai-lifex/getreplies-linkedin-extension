@@ -1,0 +1,48 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "GetReplies.ai",
+  "description": "",
+  "version": "1.1",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "popup.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "getreplies-icon-16.png",
+    "48": "getreplies-icon-48.png",
+    "128": "getreplies-icon-128.png"
+  },
+  "permissions": [
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://*.getreplies.tech/*",
+    "https://*.getreplies.ai/*",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://*.getreplies.tech/*",
+        "https://*.getreplies.ai/*",
+        "http://localhost:8000/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 3
+}
