@@ -2,7 +2,7 @@
   "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "GetReplies.ai",
   "description": "",
-  "version": "1.1",
+  "version": "1.3",
   "web_accessible_resources": [
     {
       "resources": [
