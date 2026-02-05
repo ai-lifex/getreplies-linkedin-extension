@@ -23,7 +23,7 @@
   ],
   "host_permissions": [
     "https://www.linkedin.com/*",
-    "https://*.getreplies.ai/*",
+    "https://*.getreplies.ai/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -32,7 +32,7 @@
     {
       "matches": [
         "https://www.linkedin.com/*",
-        "https://*.getreplies.ai/*",
+        "https://*.getreplies.ai/*"
       ],
       "js": [
         "content.js"
