@@ -24,7 +24,6 @@
   "host_permissions": [
     "https://www.linkedin.com/*",
     "https://*.getreplies.tech/*",
-    "https://*.getreplies.ai/*",
     "http://localhost:8000/*"
   ],
   "background": {
@@ -35,7 +34,6 @@
       "matches": [
         "https://www.linkedin.com/*",
         "https://*.getreplies.tech/*",
-        "https://*.getreplies.ai/*",
         "http://localhost:8000/*"
       ],
       "js": [
